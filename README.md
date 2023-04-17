@@ -19,4 +19,10 @@ In this project, we develop a novel architecture to model dynamic evolution of e
   - Decodres: bi-level sequence decoder to decompose the career transition probability into coarse title dist and finer title dist
   - main: the main entry of the training/testing
  
+ For ongoing techinical notes, please see:
  
+ https://www.overleaf.com/project/641fb40c74572939b28b2322
+ 
+ For transparencies, please see:
+ 
+ https://www.overleaf.com/project/6415dbed238908944eecffd8
