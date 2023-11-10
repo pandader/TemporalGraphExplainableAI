@@ -25,11 +25,3 @@ It is worth mentioning that the theory driven nature simplifies the model struct
     - scanning through career transition anchor point of each individual to enhance its embedding by metapath guided reference employee and their titles;
 This is a very nice structure, because in one model, we achieve two modes, i.e., by remove (b), we recover typically model. Moreover, the interaction of a) and b) is not a + b, but a * b (a compose b). This is very critical, because, from regression we know, a + b > a/b, but a * b is a new factor, if it has better performance than a or b, it really means their combination has new chemistry.
   - The MetaPath guided reference employees/titles can be assembled in advance, and in training time, we only need to run a static graph attention network, which in our case is just a simple aggregation. The trick is to aggregate the ETET paths for a sliding window and apply the limited lookback and non-anticipative constraints, we call it a ETET snapshot. It allows you to find, for each focal employee, the reference employee and title from a particular time instance within the lookback window. Now, due to our theory, we assign different weights to target titles based on the similarity of two employees' dynamic typically. Notice, it is based the dynamic typically NOT dynamic typically + graph embedding, which allows us to easily find the dynamic typically from the RNN pass that has been run already. This is such a great simplification but yet releastic and interpretable. Otherwise, we need to use a temporal metapath guided heterogenous graph network, which really defeats the purpose of this modeling.
- 
- For ongoing techinical notes, please see:
- 
- https://www.overleaf.com/project/641fb40c74572939b28b2322
- 
- For transparencies, please see:
- 
- https://www.overleaf.com/project/6415dbed238908944eecffd8
